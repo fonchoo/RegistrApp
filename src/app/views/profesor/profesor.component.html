@@ -1,0 +1,19 @@
+<ion-content>
+  <app-header></app-header>
+
+  <ion-list>
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <div class="asignatura-container">
+        <div class="asignatura-nombre">
+          {{ asignatura.nombre }} - {{ asignatura.seccion }} - {{asignatura.id}}
+        </div>
+      </div>
+      <ion-button fill="outline" size="small" (click)="generaQR(asignatura.id)">Generar QR</ion-button>
+      <ion-button fill="outline" size="small" (click)="detalleAsignatura()">Detalle Asignatura</ion-button>
+    </ion-item>
+  </ion-list>
+
+    <app-footer></app-footer>
+
+
+</ion-content>
