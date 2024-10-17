@@ -57,6 +57,7 @@ export class LoginComponent implements OnInit {
         // Login fallido: mostrar alerta de error
         await this.mostrarAlertaError();
         this.loginFailed = true; // Mostrar mensaje de error si el login falla
+
       }
       this.isLoggingIn = false; // Reiniciar el estado después del intento de login
     });
